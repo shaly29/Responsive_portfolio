@@ -1278,10 +1278,10 @@ footer a i{
   }
   
   .project-card {
-    background-color: #ae1313;
+    background-color: #2c2727;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #2c2727;
     transition: transform 0.3s ease;
   }
   
