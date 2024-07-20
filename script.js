@@ -1,53 +1,61 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const words = document.querySelectorAll(".word");
-  
-    words.forEach((word) => {
+  const words = document.querySelectorAll(".word");
+
+  words.forEach((word) => {
       let letters = word.textContent.split("");
       word.textContent = ""; // Clear the original text content
-  
+
       letters.forEach((letter) => {
-        let span = document.createElement("span");
-        span.textContent = letter; // Set span content to the letter
-        span.className = "letter"; // Apply initial class to span
-        word.append(span); // Append span to the word container
+          let span = document.createElement("span");
+          span.textContent = letter; // Set span content to the letter
+          span.className = "letter"; // Apply initial class to span
+          word.append(span); // Append span to the word container
       });
-    });
-  
-    let currentWordIndex = 0;
-    const maxWordIndex = words.length - 1;
-  
-    // Initial display of first word
-    words[currentWordIndex].style.opacity = "1";
-  
-    const changeText = () => {
+  });
+
+  let currentWordIndex = 0;
+  const maxWordIndex = words.length - 1;
+
+  // Initial display of first word
+  words[currentWordIndex].style.opacity = "1";
+
+  const changeText = () => {
       const currentWord = words[currentWordIndex];
       const nextWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
       const nextWord = words[nextWordIndex];
-  
+
       // Animate out the letters of the current word
       Array.from(currentWord.children).forEach((letter, i) => {
-        setTimeout(() => {
-          letter.classList.add("out");
-        }, i * 80);
+          setTimeout(() => {
+              letter.classList.add("out");
+          }, i * 80);
       });
-  
+
       // Animate in the letters of the next word
       nextWord.style.opacity = "1";
       Array.from(nextWord.children).forEach((letter, i) => {
-        letter.classList.remove("behind"); // Reset letter class
-        letter.classList.add("in"); // Apply new class for animation
+          setTimeout(() => {
+              letter.classList.remove("behind"); // Reset letter class
+              letter.classList.add("in"); // Apply new class for animation
+          }, 340 + i * 80); // Delay the in animation slightly
       });
-  
-      // Update currentWordIndex for next iteration
-      currentWordIndex = nextWordIndex;
-    };
-  
-    // Call changeText initially and then every 3000ms (3 seconds)
-    changeText();
-    setInterval(changeText, 3000);
-  });
 
-  
+      // After all letters have animated out, hide the current word and mark letters as behind
+      setTimeout(() => {
+          currentWord.style.opacity = "0";
+          Array.from(currentWord.children).forEach((letter) => {
+              letter.classList.remove("out", "in");
+              letter.classList.add("behind");
+          });
+          currentWordIndex = nextWordIndex; // Update currentWordIndex for next iteration
+      }, 4000);
+  };
+
+  // Call changeText initially and then every 4000ms (4 seconds)
+  changeText();
+  setInterval(changeText, 3000);
+});
+
 
 
   // circle skills---------------------
@@ -132,3 +140,8 @@ window.onscroll = ()=>{
 
   const scrollTop = document.querySelectorAll(".scroll-top");
   scrollTop.forEach((e1)=>observer.observe(e1));
+
+
+
+  // ratings
+  
