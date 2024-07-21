@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   words.forEach((word) => {
       let letters = word.textContent.split("");
-      word.textContent = ""; // Clear the original text content
+      word.textContent = "";
 
       letters.forEach((letter) => {
           let span = document.createElement("span");
-          span.textContent = letter; // Set span content to the letter
-          span.className = "letter"; // Apply initial class to span
-          word.append(span); // Append span to the word container
+          span.textContent = letter; 
+          span.className = "letter"; 
+          word.append(span); 
       });
   });
 

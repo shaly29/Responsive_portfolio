@@ -842,9 +842,9 @@ text-align: center;
   .tool3 { background-image: url('assets/tool3.png'); }
   .tool4 { background-image: url('assets/tool4.png'); }
   .tool5 { background-image: url('assets/tool5.png'); }
-  .tool6 { background-image: url('assets/tool6.png'); }
+  .tool6 { background-image: url('./assets/tool6.png'); }
   .tool7 { background-image: url('assets/tool7.png'); }
-  .tool8 { background-image: url('assets/tool8.png'); }
+  .tool8 { background-image: url('./assets/skills/node-js-icon-454x512-nztofx17.png'); }
   .tool9 { background-image: url('assets/tool9.png'); }
   
   .text {
@@ -1166,7 +1166,9 @@ footer a i{
         font-size: .8rem;
 
      }
-    
+     .education{
+        padding: 45px;
+     }
      .img-about img{
           /* max-width: 100%; */
          width: 300px;
