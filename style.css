@@ -1173,6 +1173,9 @@ footer a i{
      .section-services .service-box{
         flex: 1 1 18rem;
      }
+      .professional {
+        grid-template-columns: repeat(3, 1fr); /* Fewer columns for smaller tablets */
+    }
     
 }
 
@@ -1202,6 +1205,7 @@ footer a i{
      .img-about p{
         font-size:1rem ;
      }
+     
 }
 
 
