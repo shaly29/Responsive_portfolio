@@ -1124,26 +1124,33 @@ footer a i{
     }
     .home{
         grid-template-columns: 1fr;
-        padding: 30px;
+        padding:0 30px;
+        margin: 0 30px;
     }
     .home-image{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+       
     }
     .about{
         flex-direction: column-reverse;
     }
+    .about-content{
+        padding: 0 30px;
+    }
     .timeline-items::before {
         left: 20px;
+       margin: 0 40px;
     }
 
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
-        padding: 0 20px 0 40px;
+        padding:  0 80px;
         text-align: left;
     }
 
     .timeline-dot {
         left: 10px;
+        margin: 0 41px;
     }
 
     .timeline-content {
@@ -1157,10 +1164,13 @@ footer a i{
     .timeline-content p {
         font-size: 14px;
     }
-     .projects{
-        padding: 45px;
-     }
-    
+  
+    .project-card{
+        margin: 0 24px;
+    }
+    .portfolio{
+        padding: 0 50px;
+    }
     .skill-main{
         grid-template-columns: 1fr;
     }
@@ -1172,11 +1182,16 @@ footer a i{
      }
      .section-services .service-box{
         flex: 1 1 18rem;
+       margin: 0 30px;
      }
       .professional {
         grid-template-columns: repeat(3, 1fr); /* Fewer columns for smaller tablets */
     }
-    
+    .contact form {
+        flex-direction: column; /* Stack form elements vertically */
+        gap: 1rem; 
+        padding: 0 30px;
+    }    
 }
 
 
@@ -1205,6 +1220,7 @@ footer a i{
      .img-about p{
         font-size:1rem ;
      }
+     
      
 }
 
