@@ -1132,9 +1132,31 @@ footer a i{
     .about{
         flex-direction: column-reverse;
     }
-    .education{
-        padding: 45px;
-     }
+    .timeline-items::before {
+        left: 20px;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding: 0 20px 0 40px;
+        text-align: left;
+    }
+
+    .timeline-dot {
+        left: 10px;
+    }
+
+    .timeline-content {
+        padding: 20px 30px;
+    }
+
+    .timeline-content h3 {
+        font-size: 18px;
+    }
+
+    .timeline-content p {
+        font-size: 14px;
+    }
      .projects{
         padding: 45px;
      }
