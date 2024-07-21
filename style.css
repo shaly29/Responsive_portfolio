@@ -698,6 +698,9 @@ text-align: center;
 
 
 /* portfolio */
+.portfolio{
+    background-color: var(--secon-bg-color);
+}
 .filter-button{
     margin: 2rem;
     text-align: center;
@@ -815,6 +818,7 @@ text-align: center;
  
   
   .sphere-container {
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -856,7 +860,7 @@ text-align: center;
 
 /* contatc */
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--secon-bg-color);
 }
 
 .contact h2{
@@ -1076,6 +1080,7 @@ footer a i{
     .navlist a{
         padding:8px 15px ;
     }
+   
     :root{
         
 
@@ -1098,6 +1103,7 @@ footer a i{
     #menu-icon{
         display: block;
         transition: all .4s ease;
+       
     }
     #menu-icon.bx-x{
         transform: rotate(-180deg);
@@ -1118,17 +1124,19 @@ footer a i{
         display: block;
         padding-bottom: 1rem;
         font-size: 1rem;
+       
     }
     .navlist.open{
         top:100% ;
+        margin:0 30px;
     }
     .home{
         grid-template-columns: 1fr;
-        padding:0 30px;
+        /* padding:0 30px; */
         margin: 0 30px;
     }
     .home-image{
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
        
     }
     .about{
@@ -1191,7 +1199,10 @@ footer a i{
         flex-direction: column; /* Stack form elements vertically */
         gap: 1rem; 
         padding: 0 30px;
-    }    
+    } 
+    footer {
+        margin: 0 35px;
+    }   
 }
 
 
@@ -1201,6 +1212,7 @@ footer a i{
      }
      footer p{
         font-size:.6rem ;
+        
      }
      .filter-button .button{
         font-size: .8rem;
