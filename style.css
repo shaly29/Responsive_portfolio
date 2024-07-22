@@ -1131,8 +1131,7 @@ footer a i{
     }
     .home{
         grid-template-columns: 1fr;
-        /* padding:0 30px; */
-        /* margin: 0 30px; */
+       
     }
     .home-image{
         margin-bottom: 5rem;
@@ -1162,6 +1161,7 @@ footer a i{
 
     .timeline-content {
         padding: 20px 30px;
+        margin: 0 10px;
     }
 
     .timeline-content h3 {
