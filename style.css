@@ -698,6 +698,9 @@ text-align: center;
 
 
 /* portfolio */
+.portfolio{
+    background-color: var(--secon-bg-color);
+}
 .filter-button{
     margin: 2rem;
     text-align: center;
@@ -815,7 +818,7 @@ text-align: center;
  
   
   .sphere-container {
-    background-color: #0c2546;
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -857,7 +860,7 @@ text-align: center;
 
 /* contatc */
 .contact{
-    background-color: var(--bg-color);
+    background-color: var(--secon-bg-color);
 }
 
 .contact h2{
@@ -1114,7 +1117,6 @@ footer a i{
         background: var(--bg-color);
         text-align: left;
         padding: 0.5%;
-        margin:0 30px;
         transition: all .4s ease;
     }
     .navlist a{
@@ -1305,11 +1307,12 @@ footer a i{
 /* skils */
 
   
-  .dark_bg {
+  /* .dark_bg {
     background-color: #0b0a0a;
-  }
+  } */
   
   .section-padding {
+    background-color: var(--secon-bg-color);
     padding: 165px;
   }
   
@@ -1374,6 +1377,7 @@ footer a i{
   
     .section-padding {
         padding: 80px 15px;
+        
       }
   
     .project-card {
