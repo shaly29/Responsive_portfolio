@@ -1145,18 +1145,18 @@ footer a i{
     }
     .timeline-items::before {
         left: 20px;
-       margin: 0 40px;
+       /* margin: 0 40px; */
     }
 
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
-        padding:  0 80px;
+        padding:  0 40px;
         text-align: left;
     }
 
     .timeline-dot {
         left: 10px;
-        margin: 0 41px;
+        /* margin: 0 41px; */
     }
 
     .timeline-content {
@@ -1171,7 +1171,9 @@ footer a i{
     .timeline-content p {
         font-size: 14px;
     }
-  
+   .main-text{
+    margin-top: 20px;
+   }
     .project-card{
         margin: 0 24px;
     }
