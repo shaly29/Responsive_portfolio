@@ -1320,18 +1320,28 @@ footer a i {
         left: 20px;
         /* margin: 0 40px; */
     }
-
+    .exp-items::before {
+        left: 20px;
+        /* margin: 0 40px; */
+    }
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         padding: 0 40px;
         text-align: left;
     }
-
+    .exp-item:nth-child(odd),
+    .exp-item:nth-child(even) {
+        padding: 0 40px;
+        text-align: left;
+    }
     .timeline-dot {
         left: 10px;
         /* margin: 0 41px; */
     }
-
+    .exp-dot {
+        left: 10px;
+        /* margin: 0 41px; */
+    }
     .timeline-content {
         padding: 20px 30px;
         margin: 0 10px;
@@ -1340,11 +1350,15 @@ footer a i {
     .timeline-content h3 {
         font-size: 18px;
     }
-
+    .exp-content h3 {
+        font-size: 18px;
+    }
     .timeline-content p {
         font-size: 14px;
     }
-
+    .exp-content p {
+        font-size: 14px;
+    }
     .main-text {
         margin-top: 20px;
     }
