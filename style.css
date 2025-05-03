@@ -441,6 +441,106 @@ animation: morph 6s linear infinite;
     font-size: 1rem;
     font-weight: 600;
 }
+/* experience */
+.experience {
+    padding: 100px 15px;
+    
+    background: var(--bg-color);
+  }
+  
+  .experience h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  
+  .exp-items {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .exp-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--hover-color);
+    left: calc(50% - 1px);
+  }
+  
+  .exp-item {
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .exp-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .exp-item:nth-child(odd) {
+    padding-right: calc(50% + 30px);
+    text-align: right;
+  }
+  
+  .exp-item:nth-child(even) {
+    padding-left: calc(50% + 30px);
+  }
+  
+  .exp-dot {
+    height: 21px;
+    width: 21px;
+    background-color: var(--hover-color);
+    box-shadow: 0 0 25px var(--hover-color),
+                0 0 50px var(--hover-color);
+    position: absolute;
+    left: calc(50% - 10px); /* Centers dot */
+    border-radius: 50%;
+    top: 10px;
+    border: 2px solid #fff;
+  }
+  
+  .exp-year {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    margin: 6px 0 15px;
+  }
+  
+  .exp-content {
+    background-color: var(--bg-color);
+    border: 3px solid var(--hover-color);
+    padding: 30px 50px;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px var(--hover-color);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+  }
+  
+  .exp-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--hover-color);
+  }
+  
+  .exp-content h3 {
+    font-size: 20px;
+    color:#12f7ff;
+    margin: 0 0 10px;
+    font-weight: 500;
+  }
+  
+  .exp-content p {
+    color: white;
+    font-size: 12px;
+    font-weight: 350;
+    line-height: 22px;
+  }
+  
+   
+
 /* education */
 .heading{
     font-size: 3rem;
@@ -449,7 +549,8 @@ animation: morph 6s linear infinite;
 }
 .education{
     padding: 100px 15px;
-    background: var(--bg-color);
+    background: var(--secon-bg-color);
+   
 }
 
 .education h2{
