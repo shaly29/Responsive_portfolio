@@ -455,7 +455,8 @@ section {
 
 .education {
     padding: 100px 15px;
-    background: var(--secon-bg-color);
+      background: var(--bg-color);
+ 
 
 }
 
@@ -709,8 +710,8 @@ section {
 /* experience */
 .experience {
     padding: 10px 15px 50px 15px;
-
-    background: var(--bg-color);
+    background-color: var(--secon-bg-color);
+  
 }
 
 .experience h2 {
@@ -810,7 +811,7 @@ section {
 
 /* portfolio */
 .portfolio {
-    background-color: var(--secon-bg-color);
+    background: var(--bg-color);
 }
 
 .filter-button {
@@ -836,8 +837,8 @@ section {
 
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-/* height: 800px; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
     /* grid-template-columns: repeat(auto-fill , mimax(270px , 1fr)); */
     gap: 2rem;
 }
