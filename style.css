@@ -138,7 +138,7 @@ section {
 }
 
 .change-text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -708,7 +708,7 @@ section {
 
 /* experience */
 .experience {
-    padding: 100px 15px;
+    padding: 10px 15px 50px 15px;
 
     background: var(--bg-color);
 }
@@ -779,7 +779,7 @@ section {
 .exp-content {
     background-color: var(--bg-color);
     border: 3px solid var(--hover-color);
-    padding: 30px 50px;
+    padding: 30px 40px;
     border-radius: 1rem;
     box-shadow: 0 0 10px var(--hover-color);
     cursor: pointer;
@@ -836,8 +836,8 @@ section {
 
 .portfolio-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+/* height: 800px; */
     /* grid-template-columns: repeat(auto-fill , mimax(270px , 1fr)); */
     gap: 2rem;
 }
@@ -895,7 +895,7 @@ section {
 }
 
 .port-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -1257,7 +1257,7 @@ footer a i {
     }
 
     .home-content {
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
 }
 
@@ -1368,7 +1368,7 @@ footer a i {
     }
 
     .portfolio {
-        padding: 0 50px;
+        padding: 10px 50px;
     }
 
     .skill-main {
@@ -1400,12 +1400,36 @@ footer a i {
         padding: 0 30px;
     }
 
+
     footer {
         margin: 0 35px;
     }
 }
 
+@media (max-width: 768px) {
+    .about .img-about img {
+        display: none;
+    }
+    
+    .img-about {
+        display: none;
+    }
+}
 
+/* Extra small devices - 420px and below - Keep image hidden */
+@media (max-width: 420px) {
+    .about .img-about img {
+        display: none;
+    }
+      .exp-content{
+      padding: 10px 20px;
+      }
+
+ 
+    .img-about {
+        display: none;
+    }
+} 
 @media(max-width:420px) {
     html {
         font-size: 80%;
@@ -1427,7 +1451,7 @@ footer a i {
     .img-about img {
         /* max-width: 100%; */
         width: 300px;
-        /* height: 200px; */
+        height: 200px;
     }
 
     .info-about1,
